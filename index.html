@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<header>
+  <h1>BZ Weather App</h1>
+</header>
+  
+<body>
+  <div id="divheader">
+    <div id="current" class="selectheader"><button id="submitcurrent" class="textonly">Current</button></div>
+    <div id="dayforecast" class="selectheader"><button id="submitday" class="textonly">Day Forecast</button></div>
+    <div id="fullforecast" class="selectheader"><button id="submitfull" class="textonly">Full Forecast</button></div>
+  </div>
+  <form method="post" onsubmit="populateWeather();return false">
+  Enter the Zip Code or City and State (comma separated): <br>
+  <input type="text" id="input"></input>
+  <button id="submitBtn">Submit</button><br></form>
+  
+  <div id="container"></div>
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
